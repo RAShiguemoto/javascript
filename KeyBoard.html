@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KeyBoard</title>
+	<style type="text/css">
+		body {
+			font-family: Arial;
+			margin: 0px;
+			width: 100%;
+		}
+
+		#div1 {
+			text-align: center;
+		}
+
+		#div2 {
+			text-align: center;
+		}
+
+		#div3 {
+			width: 48%;
+			display: inline-block;
+			text-align: center;
+			border: 3px black solid;
+			border-radius: 5px;
+			margin-top: 50px;
+			height: 80px;
+			line-height: 80px;
+		}
+
+		#div4 {
+			width: 48%;
+			display: inline-block;
+			text-align: center;
+			border: 3px black solid;
+			border-radius: 5px;
+			height: 80px;
+			line-height: 80px;
+		}
+
+		#titulo1 {
+			font-size: 50pt;
+			font-weight: 600;
+		}
+
+		#keyCode {
+			font-size: 120pt;
+			font-weight: 600;
+		}
+
+		#key {
+			font-size: 40pt;
+			font-weight: 600;
+		}
+
+		#code {
+			font-size: 40pt;
+			font-weight: 600;
+		}
+
+		#resultado {
+			font-size: 40pt;
+			font-weight: 600;
+		}
+
+		ul {
+		    -moz-column-count: 4;
+		    -moz-column-gap: 20px;
+		    -webkit-column-count: 4;
+		    -webkit-column-gap: 20px;
+		    column-count: 4;
+		    column-gap: 20px;
+		}
+
+		li {
+			padding: 5px;
+		}
+
+	</style>
+</head>
+
+<body onkeydown="pegarKeyCode(event);">
+	<!--onkeyup="pegarKeyCode(event);"-->
+	<div id="div1">
+		<h1 id="titulo1">PRESSIONE UMA TECLA</h1>
+	</div>
+
+	<div id="div2">
+		<output id="keyCode"/>
+	</div>
+
+	<div id="div3">
+		<output id="key"></output>
+	</div>
+
+	<div id="div4">
+		<output id="code"></output>
+	</div>
+
+	<script type="text/javascript">
+		function pegarKeyCode(event) {
+			if (!event.metaKey) {
+			    event.preventDefault();
+			}
+
+			var k1 = event.keyCode;
+			var k2 = event.key;
+			var k3 = event.code;
+
+			var ref1 = document.getElementById('keyCode');
+			var ref2 = document.getElementById('key');
+			var ref3 = document.getElementById('code');
+
+			ref1.innerText = k1;
+			ref2.innerText = k2;
+			ref3.innerText = k3;
+		}
+	</script>
+</body>
+
+</html>
