@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  background-image: linear-gradient(to right, #474747, #181818);
+}
+
+div {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#titulo {
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+}
+
+#keyCode {
+  font-size: 180px;
+  font-weight: 600;
+  color: #00b232;
+  text-shadow: 1px 1px white;
+}
+
+#key {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+#code {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+#resultado {
+  font-size: 40pt;
+  font-weight: 600;
+}
+
+ul {
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 4;
+  column-gap: 20px;
+}
+
+li {
+  padding: 5px;
+}
